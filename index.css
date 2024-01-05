@@ -31,9 +31,12 @@ p{
     margin-top:90px;
     padding:20px;
     background:white;
+    border-radius:10px;
 }
 .question {
     width:100%;
+    padding:20px 0;
+    border-bottom: 2px solid #D3D3D3;
 }
 .question-headliner{
     display:flex;
@@ -42,12 +45,19 @@ p{
     height:100%;
     font-size:20px;
     font-family:"Work Sans",Arial, Helvetica, sans-serif;
-    border: 2px solid green;
+    
     width:100%;
    
 }
 .title{
+    display:flex;
+    align-items:center;
+    outline:2px solid green;
     font-family:"Work Sans",Arial, Helvetica, sans-serif;
+}
+.star{
+    margin-right:10px;
+
 }
 .answer.active{
     display:block;
@@ -55,10 +65,12 @@ p{
 .answer{
     display:none;
 }
+.answer-icon:hover{
+    cursor:pointer;
+}
 .icon-container{
     display:flex;
     align-items:center;
-    border: 2px solid red;
 }
 
 
