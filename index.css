@@ -9,6 +9,7 @@ body{
 p{
     font-size:16px;
 }
+
 .header-pattern{
     background: url('./assets/images/background-pattern-desktop.svg');
     z-index:-1;
@@ -25,7 +26,7 @@ p{
     justify-content:center;
     align-items:flex-start;
     flex-direction:column;
-    width: 60%;
+    width: 40%;
     border:2px solid red;
     margin: 0 auto;
     margin-top:90px;
@@ -45,14 +46,17 @@ p{
     height:100%;
     font-size:20px;
     font-family:"Work Sans",Arial, Helvetica, sans-serif;
-    
+    color:hsl(292, 42%, 14%);
     width:100%;
-   
+}
+.question-headliner:hover{
+    
+    color: #662d91;
+    cursor:url('./assets/images/black-hand-finger-pointing-up-svgrepo-com.svg'),auto;
 }
 .title{
     display:flex;
     align-items:center;
-    outline:2px solid green;
     font-family:"Work Sans",Arial, Helvetica, sans-serif;
 }
 .star{
@@ -64,6 +68,10 @@ p{
 }
 .answer{
     display:none;
+    color: hsl(292, 16%, 49%);
+    font-family:"Work Sans",Arial, Helvetica, sans-serif;
+    margin-top:5px;
+    line-height: 1.5;
 }
 .answer-icon:hover{
     cursor:pointer;
@@ -76,3 +84,14 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:400px){
+    .main-card{
+        width:85%;
+    }
+    .header-pattern{
+        background: url('./assets/images/background-pattern-mobile.svg');
+
+    }
+
+}
