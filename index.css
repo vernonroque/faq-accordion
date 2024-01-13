@@ -5,6 +5,7 @@
 }
 body{
     background-color:hsl(275, 100%, 97%);
+    /* cursor:url('./assets/images/favicon-32x32.png'),auto; //cursor image has to be 32 by 32 pixels */
 }
 p{
     font-size:16px;
@@ -27,12 +28,12 @@ p{
     align-items:flex-start;
     flex-direction:column;
     width: 40%;
-    border:2px solid red;
     margin: 0 auto;
     margin-top:90px;
     padding:20px;
     background:white;
     border-radius:10px;
+    box-shadow: 0 5px 20px hsl(292, 16%, 49%, 0.8)
 }
 .question {
     width:100%;
@@ -50,9 +51,9 @@ p{
     width:100%;
 }
 .question-headliner:hover{
+    cursor: pointer;
+    color: #AD28EB;
     
-    color: #662d91;
-    cursor:url('./assets/images/black-hand-finger-pointing-up-svgrepo-com.svg'),auto;
 }
 .title{
     display:flex;
@@ -75,6 +76,7 @@ p{
 }
 .answer-icon:hover{
     cursor:pointer;
+    
 }
 .icon-container{
     display:flex;
@@ -82,8 +84,19 @@ p{
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 20px; 
+    text-align: center; 
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 @media only screen and (max-width:400px){
     .main-card{
@@ -91,7 +104,11 @@ p{
     }
     .header-pattern{
         background: url('./assets/images/background-pattern-mobile.svg');
-
+    }
+    .attribution{
+        font-size:11px;
+        width:85%;
+        margin:0 auto;
     }
 
 }
