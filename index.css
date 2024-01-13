@@ -27,7 +27,7 @@ p{
     justify-content:center;
     align-items:flex-start;
     flex-direction:column;
-    width: 40%;
+    width: 576px;
     margin: 0 auto;
     margin-top:90px;
     padding:20px;
@@ -109,6 +109,12 @@ p{
         font-size:11px;
         width:85%;
         margin:0 auto;
+    }
+}
+
+@media only screen and (min-width:401px) and (max-width:600px){
+    .main-card{
+        width: 85%;
     }
 
 }
