@@ -129,6 +129,22 @@ I had to make sure the .answer container also was targeted with .active. In othe
 
 this is wrong. It caused some specifity problems. the .answer class and the .active class conflicted with each other. I had to target the container with both the classes.
 
+6. I learned about last child pseudo code
+   I didn't know that I could target the last-child in a group of siblings for particular styling. I also didn't know that I could style all sibling elements a particular way, and not style the last child. Here is my example:
+
+```css
+/* you can do it this way to remove the bottom border of the last child */
+.question:last-child {
+  border-bottom: none;
+}
+/*or*/
+
+/* you can style all elements a certain way, except the last child */
+.question:not(:last-child) {
+  border-bottom: 2px solid #d3d3d3;
+}
+```
+
 ### Continued development
 
 I would still like to practice more with JQuery. I'd also like to practice more with adding classes to containers whenever an event listener happens

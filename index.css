@@ -38,6 +38,11 @@ p{
 .question {
     width:100%;
     padding:20px 0;
+}
+/* .question:last-child{ // you can do it this way to remove the bottom border of the last child
+    border-bottom: none;
+} */
+.question:not(:last-child) {
     border-bottom: 2px solid #D3D3D3;
 }
 .question-headliner{
